@@ -35,3 +35,14 @@ footer{
     padding: 10px;
     margin-top: auto;
 }
+.list-inline-item{
+    list-style-type: none;
+}
+.list-inline{
+    display: flex;
+    gap: 10px;
+}
+i{
+    color: red;
+    font-size: 35px !important;
+}
