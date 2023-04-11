@@ -15,10 +15,7 @@ header h1 {
 
 footer {
 
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+
 
 
   display: flex;
@@ -32,7 +29,7 @@ footer {
   flex-wrap: wrap;
 }
 
-.card {
+.my-card {
   border: 1px solid black;
   border-radius: 10px;
   overflow: hidden;
@@ -62,7 +59,8 @@ i {
 }
 
 .container {
-  margin: auto 200px;
+  width: 800px;
+  margin: auto auto;
   margin-bottom: 20px;
 }
 
@@ -70,4 +68,11 @@ i {
   position: fixed;
   right: 20px;
   font-size: 30px;
+}
+
+#reservar-footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
