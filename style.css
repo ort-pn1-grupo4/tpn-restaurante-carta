@@ -20,7 +20,8 @@ footer {
 
 .row-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -46,4 +47,9 @@ footer {
 i {
   color: blue;
   font-size: 36px !important;
+}
+
+.container{
+  margin: auto 200px;
+  margin-bottom: 20px;
 }
