@@ -83,6 +83,13 @@
 
     </main>
 
+    <script>
+        function setMinDate() {
+         const fecha =  new Date().toJSON().split('T')[0];
+         document.getElementById("fecha").setAttribute('min',fecha);
+        }
+        setMinDate()
+    </script>
 
 </body>
 
