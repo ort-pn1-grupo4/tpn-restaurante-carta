@@ -10,6 +10,7 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <script src="./function.js"></script>
 </head>
 
 <body>
@@ -24,7 +25,7 @@
                 <h2>Reservas</h2>
 
                 <div class="card border border-1 shadow-sm p-3">
-                    <form>
+                    <form id="formulario" onsubmit="enviarFormulario(event)">
                         <fieldset>
                             <label class="form-label" for="fname">Nombre:</label>
                             <input class="form-control" type="text" placeholder="Pepe" required id="fname"
@@ -55,6 +56,10 @@
                             </div>
                         </fieldset>
                     </form>
+                    <script>
+                        setMinDate();
+                        onsubmit()
+                    </script>
                 </div>
             </article>
         </div>
@@ -81,15 +86,11 @@
             </div>
         </footer>
 
+        
+
     </main>
 
-    <script>
-        function setMinDate() {
-         const fecha =  new Date().toJSON().split('T')[0];
-         document.getElementById("fecha").setAttribute('min',fecha);
-        }
-        setMinDate()
-    </script>
+   
 
 </body>
 
