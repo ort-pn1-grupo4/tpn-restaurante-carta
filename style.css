@@ -14,13 +14,10 @@ header h1 {
 }
 
 footer {
-
-
-
-
   display: flex;
   justify-content: space-between;
-  background-color: beige;
+  background-color: rgba(227, 78, 41, 0.8);
+  color: #fff;
 }
 
 .row-container {
@@ -54,7 +51,7 @@ footer {
 }
 
 i {
-  color: blue;
+  color: #633a30;
   font-size: 36px !important;
 }
 
